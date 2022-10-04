@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	<link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -38,6 +42,7 @@
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#github-section" class="nav-link"><span>GitHub</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
@@ -211,7 +216,7 @@
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-							<h3>Shopbob Clone</h3>
+							<h3>Tech Stacks : HTML , CSS , JS</h3>
 	    					<h3><a href="https://shopbop.netlify.app/" target="_blank">Preview</a></h3>
 	    				</div>
     				</div>
@@ -249,7 +254,7 @@
 		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
 		    					<div class="overlay"></div>
 			    				<div class="text text-center p-4">
-			    					<h3>Croma Clone</h3>
+			    					<h3>Tech Stacks : HTML , CSS , JS</h3>
 			    					<h3><a href="https://croma-construct-w2-ftweb16.netlify.app/" target="_blank">Preview</a></h3>
 			    				</div>
 		    				</div>
@@ -258,16 +263,50 @@
 		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
 		    					<div class="overlay"></div>
 			    				<div class="text text-center p-4">
-			    					<h3>Ketto Clone</h3>
+			    					<h3>Tech Stacks : React and Redux</h3>
 			    					<h3><a href="https://ketto.netlify.app/" target="_blank">Preview</a></h3>
 			    				</div>
 		    				</div>
 	    				</div>
     				</div>
     			</div>
+				<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-8.jpg);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+							<h3>Tech Stacks : React and Redux</h3>
+	    					<h3><a href="https://time-camp.netlify.app/" target="_blank">Preview</a></h3>
+							
+	    				</div>
+    				</div>
+  				</div>
+  				<div class="col-md-8">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-7.jpg);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>View Code</h3>
+	    					<h3><a href="https://github.com/goriens/imminent-pencil-4149" target="_blank">Read more</a></h3>
+	    				</div>
+    				</div>
+  				</div>
     		</div>
     	</div>
     </section>
+	<section class="ftco-section github-section ftco-no-pb" id="github-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">GitHub</h1>
+					<h2 class="mb-4">GitHub</h2>
+				</div>
+			</div>
+		</div>
+		<div class="calendar" width="80%">
+			Loading the data just for you.
+		</div>
+
+	</section>
+
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
@@ -368,6 +407,7 @@
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+				<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>GitHub</a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
               </ul>
             </div>
@@ -408,6 +448,14 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+
+  <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+    GitHubCalendar(".calendar", "Sridhar-10");
+    GitHubCalendar(".calendar", "Sridhar-10", { responsive: true });
+</script>
+          
   </body>
 </html>
